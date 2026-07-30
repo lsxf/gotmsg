@@ -1,12 +1,12 @@
 # GotMsg · 有消息
 
 <p align="center">
-  <img src="screenshots/home-latest.png" alt="GotMsg 1.16.21 首页" width="360">
+  <img src="screenshots/home-latest.png" alt="GotMsg 1.18.6 首页" width="360">
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Android-14%2B-3DDC84?logo=android&logoColor=white" alt="Android 14+">
-  <img src="https://img.shields.io/badge/Release-v1.16.21-2563EB" alt="Release v1.16.21">
+  <img src="https://img.shields.io/badge/Release-v1.18.6-2563EB" alt="Release v1.18.6">
   <img src="https://img.shields.io/badge/Bark-支持-FF6B57" alt="Bark">
   <img src="https://img.shields.io/badge/ntfy-支持-338574" alt="ntfy">
   <img src="https://img.shields.io/badge/Telegram-支持-229ED9" alt="Telegram">
@@ -19,6 +19,8 @@
 GotMsg 安装在一台 Android 手机上，读取这台手机收到的系统通知，再转发到 **iPhone、iPad、另一台 Android、鸿蒙手机、邮箱或指定用户的私聊机器人**。短信验证码、来电、微信、QQ、Telegram 和普通 App 通知都可以进入转发链路。
 
 除了“看通知”，GotMsg 还支持从 Bark / ntfy 通知打开一次性网页，把回复送回原 Android 手机：优先使用系统快捷回复，QQ 等 App 可走无障碍兼容回复，微信可走 Shizuku。
+
+原手机主动开启并逐项授权后，还可以登录 [网页远程控制台](https://r.gotmsg.pp.ua/control) 查看设备状态、找手机、管理通知与短信，并执行已授权的设备操作；敏感动作默认不开放。
 
 🌐 **官方网站**：[gotmsg.pp.ua](https://gotmsg.pp.ua)
 
@@ -36,6 +38,7 @@ GotMsg 安装在一台 Android 手机上，读取这台手机收到的系统通�
 | 广告与噪音过滤 | 🟢 | 内置规则、自定义关键词、常驻通知过滤和 5 秒去重 |
 | 来电与未接来电 | 🟢 | 兼容 MIUI / HyperOS；有权限时补充号码和联系人姓名 |
 | 远程回复 | 🟢 | Android `RemoteInput`、无障碍兼容回复、微信 Shizuku 回复 |
+| 网页远程控制 | 🟡 可选 | 原手机主动开启并逐项授权；支持状态查询、找手机、短信与通知管理、设备操作 |
 | 锁屏 PIN 自动解锁 | 🟡 可选 | 仅 Shizuku 已运行时；PIN 用 Android Keystore 加密保存，每次最多尝试一次 |
 | 自动更新 | 🟢 | 默认开启 Shizuku 静默更新；Gitea 优先、GitHub 备用，自动选择本机适配 APK |
 | 权限健康检查 | 🟢 | 启动时按已启用功能检查必要权限，异常时从首页直达权限说明和系统设置 |
@@ -172,7 +175,7 @@ QQ、支付宝、淘宝和钉钉的兼容回复依赖 Android 系统自带的**�
 
 这项权限是核心权限；普通“允许 GotMsg 自己弹通知”不能代替通知读取权限。
 
-如果首页仍显示待授权，点 **设置 → 权限需求说明**，下拉找到“通知使用权”，点击“去设置”再次确认。部分系统需要关闭后重新开启一次通知使用权，返回 GotMsg 后等待几秒刷新状态。
+如果首页仍显示待授权，点 **设置 → 权限需求及说明**，下拉找到“通知使用权”，点击“去设置”再次确认。部分系统需要关闭后重新开启一次通知使用权，返回 GotMsg 后等待几秒刷新状态。
 
 ### 第 4 步：开启转发并实测
 
@@ -448,10 +451,9 @@ GotMsg 直接连接 SMTP 服务器发送纯文本邮件。当前只支持 **SMTP
 
 1. 登录用于发件的邮箱网页版或官方 App，进入账号安全设置。
 2. 开启 SMTP 服务。QQ / 163 通常会生成单独的 SMTP 授权码；Gmail 通常需要先开启两步验证，再创建应用专用密码。
-3. 原手机打开 GotMsg → **设置 → 电邮**，先打开“启用电邮转发”。
-4. 点“添加”，按上表填写。发件人通常必须与账号完全相同。
-5. 保存后点发送测试，到收件箱和垃圾邮件中查找“GotMsg 测试”。
-6. 测试成功后保留该配置的启用开关。
+3. 原手机打开 GotMsg → **设置 → 电邮**，点“添加”，按上表填写。发件人通常必须与账号完全相同。
+4. 保存后点发送测试，到收件箱和垃圾邮件中查找“GotMsg 测试”。
+5. 测试成功后保留该配置的启用开关；每个 SMTP 配置独立控制是否参与转发。
 
 <details>
 <summary><strong>常见邮箱填写示例</strong></summary>
