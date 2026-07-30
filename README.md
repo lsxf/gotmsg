@@ -58,7 +58,6 @@ GotMsg 安装在一台 Android 手机上，读取这台手机收到的系统通�
 - [过滤、来电、图标和更新](#过滤来电图标和更新)
 - [常见问题排查](#常见问题排查)
 - [界面截图](#界面截图)
-- [赞赏支持](#赞赏支持)
 - [隐私与安全](#隐私与安全)
 
 ---
@@ -743,18 +742,6 @@ MIUI / HyperOS 经常不把系统电话通知交给第三方监听器。GotMsg �
 
 <p align="center">
   <img src="screenshots/qq-group.png" alt="GotMsg QQ 群二维码" width="360">
-</p>
-
----
-
-## 赞赏支持
-
-如果 GotMsg 帮你节省了盯通知、找验证码或跨设备回复的时间，欢迎通过微信赞赏支持持续维护。
-
-赞赏完全自愿，不影响任何功能使用。
-
-<p align="center">
-  <img src="appreciate.jpg" alt="GotMsg 微信赞赏码" width="320">
 </p>
 
 ---
