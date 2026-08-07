@@ -1,12 +1,12 @@
 # GotMsg · 有消息
 
 <p align="center">
-  <img src="screenshots/home-latest.png" alt="GotMsg 1.18.7 首页" width="360">
+  <img src="screenshots/home-latest.png" alt="GotMsg 1.18.8 首页" width="360">
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Android-14%2B-3DDC84?logo=android&logoColor=white" alt="Android 14+">
-  <img src="https://img.shields.io/badge/Release-v1.18.7-2563EB" alt="Release v1.18.7">
+  <img src="https://img.shields.io/badge/Android-11%2B-3DDC84?logo=android&logoColor=white" alt="Android 11+">
+  <img src="https://img.shields.io/badge/Release-v1.18.8-2563EB" alt="Release v1.18.8">
   <img src="https://img.shields.io/badge/Bark-支持-FF6B57" alt="Bark">
   <img src="https://img.shields.io/badge/ntfy-支持-338574" alt="ntfy">
   <img src="https://img.shields.io/badge/Telegram-支持-229ED9" alt="Telegram">
@@ -150,7 +150,7 @@ QQ、支付宝、淘宝和钉钉的兼容回复依赖 Android 系统自带的**�
 
 </details>
 
-系统要求：**Android 14 / API 34 或更高版本**。低于 Android 14 无法安装。
+系统要求：**Android 11 / API 30 或更高版本**。低于 Android 11 无法安装。
 
 ### 第 2 步：先配置一个接收通道
 
@@ -1012,6 +1012,6 @@ docker run -d --name ntfy --restart=unless-stopped \
 
 - 官方网站：[gotmsg.pp.ua](https://gotmsg.pp.ua)
 - 最新安装包：[Releases](../../releases)
-- Android 最低版本：Android 14 / API 34
+- Android 最低版本：Android 11 / API 30
 - 自 v1.10.2 起项目闭源，公开仓库保留用户文档、截图和 Release 安装包。
 - 本项目仅供个人使用，**All Rights Reserved / 保留所有权利**。
